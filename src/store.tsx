@@ -3,7 +3,9 @@ import { dataService, type AppState } from './services/dataService'
 import { armarPerfil, armarPerfiles, calcularCompletitud, reputacionDe } from './domain/perfil'
 import { contarCalces, recomendar } from './domain/afinidad'
 import { formatearRut, limpiarRut, validarRut } from './domain/rut'
-import type { Busqueda, Empresa, Rubro, Urgencia } from './domain/types'
+import { aplicarInteres, matchEntre } from './domain/matching'
+import { pesoCalce } from './domain/afinidad'
+import type { Busqueda, Empresa, ID, Interes, Match, NecesidadPublicada, PalancaColaboracion, Rubro, TipoInteres, Urgencia } from './domain/types'
 
 export const MAX_POR_LISTA = 4
 
@@ -19,6 +21,19 @@ interface Store {
   setOfrece(rubros: Rubro[]): void
   setBusca(items: { rubro: Rubro; urgencia?: Urgencia; nota?: string }[]): void
   terminarOnboarding(): void
+  /** Mazo y necesidades: registra mi decisión sobre otra empresa. */
+  decidir(a: ID, tipo: TipoInteres, origen?: { necesidadId: ID }): void
+  publicarNecesidad(rubro: Rubro, texto: string): void
+  resolverNecesidad(id: ID): void
+  guardarPropuesta(matchId: ID, palancas: PalancaColaboracion[], nota?: string): void
+  marcarCelebrado(matchId: ID): void
+  setSimularRespuesta(v: boolean): void
+  // derivados de la red
+  matchPendienteCelebrar: Match | null
+  misMatches: Match[]
+  guardadas: ID[]
+  yaDecididas: Set<ID>
+  necesidadesParaMi: NecesidadPublicada[]
   // derivados
   perfilYo: ReturnType<typeof armarPerfil> | null
   completitudYo: number
@@ -101,6 +116,42 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     mutar((s) => ({ ...s, onboardingCompleto: [...new Set([...s.onboardingCompleto, idYo])] }))
   }
 
+  const redDe = (s: AppState) => ({ intereses: s.intereses, matches: s.matches, conexiones: s.conexiones })
+  const registrar = (s: AppState, nuevo: Interes): AppState => {
+    const r = aplicarInteres(redDe(s), nuevo, (id) => armarPerfil(id, s))
+    return { ...s, ...r.red }
+  }
+
+  const decidir: Store['decidir'] = (a, tipo, origen) => {
+    if (!idYo) return
+    const de = idYo
+    const en = ahora()
+    mutar((s) => registrar(s, { de, a, tipo, origen: origen ? 'necesidad' : 'mazo', necesidadId: origen?.necesidadId, en }))
+    // Modo demo: la otra empresa responde a los pocos segundos.
+    if (tipo === 'me_interesa' && estado.demo.simularRespuesta) {
+      window.setTimeout(() => {
+        mutar((s) => (s.intereses.some((i) => i.de === a && i.a === de) ? s : registrar(s, { de: a, a: de, tipo: 'me_interesa', origen: 'mazo', en: ahora() })))
+      }, 2200)
+    }
+  }
+
+  const publicarNecesidad: Store['publicarNecesidad'] = (rubro, texto) => {
+    if (!yo) return
+    const n: NecesidadPublicada = { id: `nec-${Date.now()}`, empresaId: yo.id, rubro, texto: texto.trim(), region: yo.region, comuna: yo.comuna, estado: 'abierta', creadaEn: ahora() }
+    mutar((s) => ({ ...s, necesidades: [...s.necesidades, n] }))
+  }
+  const resolverNecesidad = (id: ID) =>
+    mutar((s) => ({ ...s, necesidades: s.necesidades.map((n) => (n.id === id ? { ...n, estado: 'resuelta' as const } : n)) }))
+  const guardarPropuesta: Store['guardarPropuesta'] = (matchId, palancas, nota) => {
+    if (!idYo) return
+    mutar((s) => ({ ...s, propuestas: [...s.propuestas.filter((p) => !(p.matchId === matchId && p.de === idYo)), { matchId, de: idYo, palancas, nota, en: ahora() }] }))
+  }
+  const marcarCelebrado = (matchId: ID) => {
+    if (!idYo) return
+    mutar((s) => ({ ...s, matches: s.matches.map((m) => (m.id === matchId ? { ...m, celebradoPor: [...new Set([...(m.celebradoPor ?? []), idYo])] } : m)) }))
+  }
+  const setSimularRespuesta = (v: boolean) => mutar((s) => ({ ...s, demo: { simularRespuesta: v } }))
+
   const perfiles = useMemo(() => armarPerfiles(estado), [estado])
   const perfilYo = useMemo(() => (idYo ? perfiles.find((p) => p.id === idYo) ?? null : null), [perfiles, idYo])
   const otras = useMemo(() => perfiles.filter((p) => p.id !== idYo), [perfiles, idYo])
@@ -119,7 +170,26 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     return m
   }, [estado.ofertas, idYo])
 
+  const misMatches = useMemo(() => estado.matches.filter((m) => idYo && m.empresas.includes(idYo)), [estado.matches, idYo])
+  const matchPendienteCelebrar = misMatches.find((m) => !(m.celebradoPor ?? []).includes(idYo ?? '')) ?? null
+  const misIntereses = estado.intereses.filter((i) => i.de === idYo)
+  const guardadas = misIntereses.filter((i) => i.tipo === 'guardar').map((i) => i.a)
+  const yaDecididas = new Set(misIntereses.map((i) => i.a))
+  const necesidadesParaMi = useMemo(() => {
+    if (!perfilYo || !idYo) return []
+    return estado.necesidades.filter(
+      (n) =>
+        n.estado === 'abierta' &&
+        n.empresaId !== idYo &&
+        perfilYo.ofrece.some((o) => pesoCalce(n.rubro, o) > 0) &&
+        !estado.intereses.some((i) => i.de === idYo && i.necesidadId === n.id) &&
+        !matchEntre(estado.matches, idYo, n.empresaId),
+    )
+  }, [estado.necesidades, estado.intereses, estado.matches, perfilYo, idYo])
+
   const value: Store = {
+    decidir, publicarNecesidad, resolverNecesidad, guardarPropuesta, marcarCelebrado, setSimularRespuesta,
+    matchPendienteCelebrar, misMatches, guardadas, yaDecididas, necesidadesParaMi,
     estado, yo, ingresar, entrarComo, salir, reiniciarDemo, actualizarEmpresa, setOfrece, setBusca, terminarOnboarding,
     perfilYo, completitudYo, calces, mazo,
     reputacion: (id) => reputacionDe(id, estado.evaluaciones),

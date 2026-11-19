@@ -34,14 +34,14 @@ export function BarraInferior() {
   )
 }
 
-export function Encabezado({ titulo, subtitulo, derecha }: { titulo: ReactNode; subtitulo?: ReactNode; derecha?: ReactNode }) {
+export function Encabezado({ titulo, subtitulo, derecha, compacto }: { titulo: ReactNode; subtitulo?: ReactNode; derecha?: ReactNode; compacto?: boolean }) {
   return (
     <header className="bg-white">
       <Cinta />
-      <div className="flex items-start justify-between gap-3 px-5 pb-4 pt-4">
+      <div className={`flex items-start justify-between gap-3 px-5 ${compacto ? 'pb-2 pt-2' : 'pb-4 pt-4'}`}>
         <div>
-          <p className="text-[13px] font-medium uppercase tracking-wide text-azul">Match B2B · Vamos MiPYME</p>
-          <h1 className="mt-1 text-[24px] leading-tight">{titulo}</h1>
+          {!compacto && <p className="text-[13px] font-medium uppercase tracking-wide text-azul">Match B2B · Vamos MiPYME</p>}
+          <h1 className={`${compacto ? '' : 'mt-1'} text-[24px] leading-tight`}>{titulo}</h1>
           {subtitulo && <p className="mt-1 text-[15px] text-gris-medio">{subtitulo}</p>}
         </div>
         {derecha}

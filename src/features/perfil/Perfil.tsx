@@ -7,7 +7,7 @@ import { PESOS_COMPLETITUD } from '../../domain/perfil'
 import { EditorBusca, EditorOfrece } from '../home/Editores'
 
 export function Perfil() {
-  const { yo, perfilYo, estado, completitudYo, reputacion, actualizarEmpresa, entrarComo, salir, reiniciarDemo } = useStore()
+  const { yo, perfilYo, estado, completitudYo, reputacion, actualizarEmpresa, entrarComo, salir, reiniciarDemo, setSimularRespuesta } = useStore()
   const nav = useNavigate()
   const [editando, setEditando] = useState<'busca' | 'ofrece' | null>(null)
   if (!yo || !perfilYo) return null
@@ -69,6 +69,10 @@ export function Perfil() {
           <select id="ser" className="campo" value={yo.id} onChange={(e) => entrarComo(e.target.value)}>
             {estado.empresas.map((e) => <option key={e.id} value={e.id}>{e.nombre}{e.ficticia ? ' (ficticia)' : ''}</option>)}
           </select>
+          <label className="mt-3 flex min-h-[44px] items-center gap-3 text-[15px]">
+            <input type="checkbox" className="h-5 w-5 accent-[#004dff]" checked={estado.demo.simularRespuesta} onChange={(e) => setSimularRespuesta(e.target.checked)} />
+            La otra empresa responde “Me interesa” a los pocos segundos
+          </label>
           <div className="mt-3 flex gap-2">
             <button className="btn btn-suave flex-1 text-[15px]" onClick={() => { salir(); nav('/ingreso') }}>Salir</button>
             <button className="btn btn-suave flex-1 text-[15px]" onClick={() => { reiniciarDemo(); nav('/ingreso') }}>Reiniciar demo</button>

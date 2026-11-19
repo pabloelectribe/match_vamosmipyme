@@ -64,6 +64,8 @@ export interface Match {
   /** Rubros que cada una le vende a la otra, para presentar el intercambio. */
   vendeA: Record<ID, Rubro[]>
   creadoEn: string
+  /** Empresas que ya vieron la pantalla de celebración. */
+  celebradoPor?: ID[]
 }
 
 export type EstadoConexion =

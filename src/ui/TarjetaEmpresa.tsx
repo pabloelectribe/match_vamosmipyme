@@ -29,7 +29,7 @@ function Columna({ titulo, rubros, encendidos, max = 3 }: { titulo: string; rubr
 }
 
 /** Tarjeta de empresa con "Busca" y "Ofrece" siempre a la vista y coincidencias encendidas. */
-export function TarjetaEmpresa({ empresa, ofrece, busca, afinidad, nota, nEval, compacta }: {
+export function TarjetaEmpresa({ empresa, ofrece, busca, afinidad, nota, nEval, compacta, maxChips = 3 }: {
   empresa: Empresa
   ofrece: Rubro[]
   busca: Rubro[]
@@ -37,6 +37,7 @@ export function TarjetaEmpresa({ empresa, ofrece, busca, afinidad, nota, nEval, 
   nota?: number
   nEval: number
   compacta?: boolean
+  maxChips?: number
 }) {
   // Lo que ella ofrece y yo busco / lo que ella busca y yo ofrezco
   const lucesOfrece = new Set(afinidad?.ofreceLoQueBuscas.map((c) => c.ofrece))
@@ -63,11 +64,11 @@ export function TarjetaEmpresa({ empresa, ofrece, busca, afinidad, nota, nEval, 
         <span>{nEval >= 3 && nota !== undefined ? `Nota ${nota.toFixed(1).replace('.', ',')} · ${nEval} evaluaciones` : 'Nueva en Match B2B'}</span>
       </div>
       <div className="mt-4 flex gap-3">
-        <Columna titulo="Busca" rubros={busca} encendidos={lucesBusca} />
-        <Columna titulo="Ofrece" rubros={ofrece} encendidos={lucesOfrece} />
+        <Columna titulo="Busca" rubros={busca} encendidos={lucesBusca} max={maxChips} />
+        <Columna titulo="Ofrece" rubros={ofrece} encendidos={lucesOfrece} max={maxChips} />
       </div>
       {afinidad && afinidad.motivos.length > 0 && (
-        <p className="mt-4 rounded-2xl bg-gris-claro px-3 py-2.5 text-[14px] leading-snug text-gris">
+        <p className="mt-3 line-clamp-3 rounded-2xl bg-gris-claro px-3 py-2 text-[14px] leading-snug text-gris">
           <span className="font-medium text-tinta">Por qué la ves: </span>
           {afinidad.motivos.slice(0, 2).join(' · ')}
         </p>

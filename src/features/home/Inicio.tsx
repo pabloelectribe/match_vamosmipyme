@@ -5,10 +5,11 @@ import { Encabezado } from '../../ui/Marco'
 import { Chip, Icono, Progreso } from '../../ui/kit'
 import { TarjetaEmpresa } from '../../ui/TarjetaEmpresa'
 import { EditorBusca, EditorOfrece } from './Editores'
+import { MisNecesidades, PublicarNecesidad, TeNecesitan } from './Necesidades'
 
 export function Inicio() {
   const { yo, perfilYo, calces, mazo, estado, completitudYo, reputacion } = useStore()
-  const [editando, setEditando] = useState<'busca' | 'ofrece' | null>(null)
+  const [editando, setEditando] = useState<'busca' | 'ofrece' | 'necesidad' | null>(null)
   if (!yo || !perfilYo || !calces) return null
   const busquedas = estado.busquedas.filter((b) => b.empresaId === yo.id)
 
@@ -35,6 +36,7 @@ export function Inicio() {
           {busquedas.filter((b) => b.nota).map((b) => (
             <p key={b.rubro} className="mt-2 text-[14px] italic text-gris-medio">“{b.nota}”</p>
           ))}
+          <button className="mt-3 min-h-[44px] text-[15px] font-medium text-azul" onClick={() => setEditando('necesidad')}>+ Publicar una necesidad puntual</button>
           <div className="my-4 h-px bg-gris-borde" />
           <div className="flex items-center justify-between">
             <h2 className="text-[18px]">Ofrezco</h2>
@@ -69,6 +71,9 @@ export function Inicio() {
           </Link>
         )}
 
+        <MisNecesidades />
+        <TeNecesitan />
+
         <section aria-label="Recomendadas">
           <div className="mb-2 flex items-end justify-between px-1">
             <h2 className="text-[20px]">Recomendadas para ti</h2>
@@ -86,6 +91,7 @@ export function Inicio() {
       </main>
       <EditorBusca abierta={editando === 'busca'} onCerrar={() => setEditando(null)} />
       <EditorOfrece abierta={editando === 'ofrece'} onCerrar={() => setEditando(null)} />
+      <PublicarNecesidad abierta={editando === 'necesidad'} onCerrar={() => setEditando(null)} />
     </>
   )
 }
