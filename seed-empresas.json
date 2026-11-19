@@ -1,0 +1,595 @@
+{
+ "fuente": "Fichas vigentes del Directorio de Negocios B2B de vamosmipyme.cl (corte nov-2026), sin fichas de prueba. Sin datos de contacto.",
+ "empresas": [
+  {
+   "id": "mdi",
+   "nombre": "Mdi360",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Quilicura",
+   "rubros": [],
+   "tags": [],
+   "vende": [
+    "Publicidad y agencias creativas",
+    "Diseño gráfico y branding",
+    "Desarrollo de software",
+    "Gestión de Redes Sociales",
+    "Marketing digital, ads, publicidad y automatización",
+    "Servicios de diseño y desarrollo web"
+   ],
+   "busca": [
+    "Arriendo de oficinas, bodegas y cowork",
+    "Arriendo/venta de maquinaria y equipos",
+    "Capacitación y OTEC",
+    "Catering y banquetería",
+    "Ciberseguridad",
+    "Desarrollo de software",
+    "Estrategia, procesos y mejora continua",
+    "Fabricación de envases y packaging"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/74-mdi360"
+  },
+  {
+   "id": "rey",
+   "nombre": "Funeraria Rey David",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Puente Alto",
+   "rubros": [],
+   "tags": [],
+   "vende": [
+    "Mayoristas de insumos y materias primas"
+   ],
+   "busca": [
+    "Servicios de diseño y desarrollo web"
+   ],
+   "canales": [
+    "digital",
+    "presencial"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/73-funeraria-rey-david"
+  },
+  {
+   "id": "sca",
+   "nombre": "Ingeniería SCA",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Providencia",
+   "rubros": [],
+   "tags": [],
+   "vende": [
+    "Desarrollo de software"
+   ],
+   "busca": [
+    "Instalación eléctrica industrial"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/72-ingenieria-sca-ltda"
+  },
+  {
+   "id": "trekan",
+   "nombre": "Trekan",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Las Condes",
+   "rubros": [],
+   "tags": [],
+   "vende": [
+    "Desarrollo de software",
+    "Estrategia, procesos y mejora continua",
+    "Formación corporativa y ejecutiva",
+    "Marketing digital, ads, publicidad y automatización",
+    "Regalos corporativos, POP y merchandising",
+    "Servicios de diseño y desarrollo web",
+    "Capacitación y OTEC"
+   ],
+   "busca": [
+    "Diseño gráfico y branding",
+    "Distribución y venta de alimentos al por mayor",
+    "Fabricación de envases y packaging",
+    "Gestión de Redes Sociales"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/71-trekan-spa"
+  },
+  {
+   "id": "sch",
+   "nombre": "SCH Productos Digitales",
+   "region": "De Valparaíso",
+   "comuna": "Puchuncaví",
+   "rubros": [],
+   "tags": [],
+   "vende": [
+    "Servicios de diseño y desarrollo web"
+   ],
+   "busca": [
+    "Diseño gráfico y branding",
+    "Gestión de Redes Sociales",
+    "Gestión documental",
+    "Publicidad y agencias creativas"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/70-sch-productos-digitales-spa"
+  },
+  {
+   "id": "otec",
+   "nombre": "OTEC Fundación Luterana",
+   "region": "De Valparaíso",
+   "comuna": "Quilpué",
+   "rubros": [],
+   "tags": [],
+   "vende": [
+    "Capacitación técnica para industrias"
+   ],
+   "busca": [
+    "Arriendo de oficinas, bodegas y cowork",
+    "Arriendo de maquinaria para la construcción y andamios"
+   ],
+   "canales": [
+    "digital",
+    "presencial"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/67-otec-fundacion-luterana-de-capacitacion"
+  },
+  {
+   "id": "moal",
+   "nombre": "MOAL Consultores",
+   "region": "De Valparaíso",
+   "comuna": "Viña del Mar",
+   "rubros": [],
+   "tags": [],
+   "vende": [
+    "Contabilidad y auditoría",
+    "Outsourcing"
+   ],
+   "busca": [
+    "Desarrollo de software"
+   ],
+   "canales": [
+    "presencial"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/66-moal-consultores"
+  },
+  {
+   "id": "eco",
+   "nombre": "EcoJeans",
+   "region": "De Coquimbo",
+   "comuna": "Ovalle",
+   "rubros": [
+    "Uniformes",
+    "Ropa Corporativa"
+   ],
+   "tags": [
+    "Uniformes corporativos",
+    "Ropa Industrial"
+   ],
+   "vende": [
+    "Mayoristas de insumos y materias primas"
+   ],
+   "busca": [
+    "Diseño gráfico y branding",
+    "Capacitación y OTEC"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/64-ecojeans"
+  },
+  {
+   "id": "clic",
+   "nombre": "Clicauto",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Santiago",
+   "rubros": [
+    "Marketing Digital"
+   ],
+   "tags": [
+    "Marketing Digital",
+    "Diseño"
+   ],
+   "vende": [
+    "Gestión de Redes Sociales",
+    "Marketing digital, ads, publicidad y automatización"
+   ],
+   "busca": [
+    "Marketing digital, ads, publicidad y automatización"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/62-clicauto"
+  },
+  {
+   "id": "city",
+   "nombre": "Transportes Citytransfer",
+   "region": "Metropolitana de Santiago",
+   "comuna": "La Florida",
+   "rubros": [
+    "Transporte"
+   ],
+   "tags": [
+    "Transfer",
+    "Transporte de pasajeros"
+   ],
+   "vende": [
+    "Gestión de viajes corporativos"
+   ],
+   "busca": [
+    "Servicios de diseño y desarrollo web"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/61-transportes-citytransfer-spa"
+  },
+  {
+   "id": "gabr",
+   "nombre": "GABR132 Telecomunicaciones",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Santiago",
+   "rubros": [
+    "Telecomunicaciones"
+   ],
+   "tags": [
+    "Telecomunicaciones",
+    "Asesorías"
+   ],
+   "vende": [
+    "Ciberseguridad"
+   ],
+   "busca": [
+    "Ciberseguridad"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/60-gabr132-telecomunicaciones-spa"
+  },
+  {
+   "id": "stc",
+   "nombre": "STC Sunbelt",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Providencia",
+   "rubros": [
+    "Energía Solar"
+   ],
+   "tags": [
+    "Sistemas Fotovoltaicos",
+    "Paneles Solares",
+    "Energía"
+   ],
+   "vende": [
+    "Instalación de sistemas fotovoltaicos",
+    "Instalación eléctrica industrial"
+   ],
+   "busca": [
+    "Prevención de riesgos, Seguridad y salud en obra",
+    "Empresa Constructora",
+    "Contratistas y subcontratistas, obras civiles",
+    "Almacenaje y bodegaje"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/58-stc-sunbelt-spa"
+  },
+  {
+   "id": "next",
+   "nombre": "Nextstation",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Las Condes",
+   "rubros": [
+    "Software"
+   ],
+   "tags": [
+    "Software",
+    "Automatización"
+   ],
+   "vende": [
+    "Desarrollo de software",
+    "Servicios cloud",
+    "Servicios de diseño y desarrollo web"
+   ],
+   "busca": [
+    "Outsourcing"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/57-nextstation-spa"
+  },
+  {
+   "id": "bas",
+   "nombre": "BAS Ingenieros",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Recoleta",
+   "rubros": [
+    "Ingeniería",
+    "Asesorías"
+   ],
+   "tags": [
+    "BMS",
+    "Automatización",
+    "Ingeniería Industrial"
+   ],
+   "vende": [
+    "Instalación eléctrica industrial"
+   ],
+   "busca": [
+    "Contratistas y subcontratistas, obras civiles"
+   ],
+   "canales": [
+    "presencial"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/56-bas"
+  },
+  {
+   "id": "cristal",
+   "nombre": "Cristalmath",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Ñuñoa",
+   "rubros": [
+    "Construcción"
+   ],
+   "tags": [
+    "Materiales de Construcción",
+    "Construcción",
+    "Instalaciones"
+   ],
+   "vende": [
+    "Contratistas y subcontratistas, obras civiles",
+    "Empresa Constructora",
+    "Servicios de Arquitectura",
+    "Distribuidores de maquinaria y repuestos para el comercio"
+   ],
+   "busca": [
+    "Arriendo de oficinas, bodegas y cowork",
+    "Arriendo/venta de maquinaria y equipos",
+    "Capacitación técnica para industrias",
+    "Capacitación y OTEC",
+    "Contratistas y subcontratistas, obras civiles",
+    "Empresa Constructora",
+    "Gestión de Redes Sociales"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/55-cristalmath-spa"
+  },
+  {
+   "id": "ampolleta",
+   "nombre": "Casa de la Ampolleta",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Santiago",
+   "rubros": [
+    "Insumos eléctricos",
+    "Electricidad"
+   ],
+   "tags": [
+    "Electricidad"
+   ],
+   "vende": [
+    "Distribuidores de maquinaria y repuestos para el comercio"
+   ],
+   "busca": [
+    "Marketing digital, ads, publicidad y automatización"
+   ],
+   "canales": [
+    "digital",
+    "presencial"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/54-casa-de-la-ampolleta"
+  },
+  {
+   "id": "nordik",
+   "nombre": "Comercializadora Nordik",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Colina",
+   "rubros": [
+    "Servicios de Limpieza",
+    "Insumos de Limpieza"
+   ],
+   "tags": [
+    "Limpieza Industrial",
+    "Insumos de Limpieza"
+   ],
+   "vende": [
+    "Aseo y sanitización industrial",
+    "Mayoristas de insumos y materias primas"
+   ],
+   "busca": [
+    "Aseo y sanitización industrial",
+    "Asesoría en Mercado Público (ChileCompra)",
+    "Mayoristas de insumos y materias primas"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/53-comercializadora-nordik-spa"
+  },
+  {
+   "id": "dake",
+   "nombre": "D.Ake Insumos",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Lo Prado",
+   "rubros": [
+    "Insumos y Materiales"
+   ],
+   "tags": [
+    "Insumos gráficos",
+    "Papelería",
+    "Materiales para la manufactura"
+   ],
+   "vende": [
+    "Mayoristas de insumos y materias primas"
+   ],
+   "busca": [
+    "Mayoristas de insumos y materias primas",
+    "Arriendo/venta de maquinaria y equipos",
+    "Asesoría en Mercado Público (ChileCompra)"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/52-dakeinsumosgmailcom"
+  },
+  {
+   "id": "elem",
+   "nombre": "Elementores",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Santiago",
+   "rubros": [
+    "Marketing Digital"
+   ],
+   "tags": [
+    "Marketing Digital",
+    "Redes Sociales"
+   ],
+   "vende": [
+    "Desarrollo de software",
+    "Gestión de Redes Sociales",
+    "Marketing digital, ads, publicidad y automatización",
+    "Publicidad y agencias creativas",
+    "Servicios cloud",
+    "Servicios de diseño y desarrollo web",
+    "Analítica y seguimiento"
+   ],
+   "busca": [
+    "Producción de eventos y ferias B2B",
+    "Servicios de audio, video y televisión"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/46-elementores"
+  },
+  {
+   "id": "recicla",
+   "nombre": "Recicla Ya",
+   "region": "Metropolitana de Santiago",
+   "comuna": "Maipú",
+   "rubros": [
+    "Reciclaje",
+    "Servicios de Aseo"
+   ],
+   "tags": [
+    "Servicios de Reciclaje",
+    "Recolección de Residuos"
+   ],
+   "vende": [
+    "Manejo y valorización de residuos"
+   ],
+   "busca": [
+    "Manejo y valorización de residuos",
+    "Mayoristas de insumos y materias primas"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/44-recicla-ya-spa"
+  },
+  {
+   "id": "newen",
+   "nombre": "Newen Digital",
+   "region": "De La Araucanía",
+   "comuna": "Temuco",
+   "rubros": [
+    "E-Commerce",
+    "Servicios",
+    "Marketing Digital",
+    "Redes Sociales"
+   ],
+   "tags": [
+    "Redes Sociales",
+    "Marketing Digital"
+   ],
+   "vende": [
+    "Analítica y seguimiento",
+    "Diseño gráfico y branding",
+    "Gestión de Redes Sociales",
+    "Marketing digital, ads, publicidad y automatización",
+    "Publicidad y agencias creativas",
+    "Servicios de diseño y desarrollo web"
+   ],
+   "busca": [
+    "Servicios jurídicos empresariales",
+    "Ciberseguridad"
+   ],
+   "canales": [
+    "digital"
+   ],
+   "ficha": "https://www.vamosmipyme.cl/emprendimientos/42-newen-digital-spa"
+  }
+ ],
+ "catalogo_rubros": [
+  "3PL, fulfillment y última milla",
+  "Almacenaje y bodegaje",
+  "Analítica y seguimiento",
+  "Arriendo de maquinaria para la construcción y andamios",
+  "Arriendo de oficinas, bodegas y cowork",
+  "Arriendo/venta de maquinaria y equipos",
+  "Aseo y sanitización industrial",
+  "Asesoría agrícola",
+  "Asesoría en Mercado Público (ChileCompra)",
+  "Buceo operativo y mantención submarina",
+  "Capacitación técnica para industrias",
+  "Capacitación y OTEC",
+  "Carga general y especializada",
+  "Catering y banquetería",
+  "Ciberseguridad",
+  "Confección industrial de textil o calzado",
+  "Contabilidad y auditoría",
+  "Contratistas y subcontratistas, obras civiles",
+  "Corte, plegado y soldadura",
+  "Desarrollo de software",
+  "Diseño gráfico y branding",
+  "Diseño y prototipado industrial",
+  "Distribución y venta de alimentos al por mayor",
+  "Distribuidores de maquinaria y repuestos para el comercio",
+  "Empresa Constructora",
+  "Estrategia, procesos y mejora continua",
+  "Exámenes preocupacionales y vigilancia",
+  "Fabricación de envases y packaging",
+  "Facilities y gestión de propiedades",
+  "Formación corporativa y ejecutiva",
+  "Frío y cadena de suministro",
+  "Gestión de Redes Sociales",
+  "Gestión de viajes corporativos",
+  "Gestión documental",
+  "Inspección Técnica de Obras (ITO)",
+  "Instalación de sistemas fotovoltaicos",
+  "Instalación eléctrica industrial",
+  "Instalación y mantención de Aire Acondicionado",
+  "Manejo forestal",
+  "Manejo y valorización de residuos",
+  "Mantención industrial mecánica y eléctrica",
+  "Maquila y co-manufactura alimentos",
+  "Marketing digital, ads, publicidad y automatización",
+  "Mayoristas de insumos y materias primas",
+  "Monitoreo ambiental y permisos",
+  "Outsourcing",
+  "Prevención de riesgos",
+  "Prevención de riesgos (DS44)",
+  "Prevención de riesgos, Seguridad y salud en obra",
+  "Producción de eventos y ferias B2B",
+  "Publicidad y agencias creativas",
+  "Reclutamiento y selección especializada",
+  "Regalos corporativos, POP y merchandising",
+  "Servicios cloud",
+  "Servicios de Arquitectura",
+  "Servicios de alimentación para Horeca y casinos",
+  "Servicios de audio, video y televisión",
+  "Servicios de cultivo y mantención acuícola",
+  "Servicios de diseño y desarrollo web",
+  "Servicios jurídicos empresariales",
+  "Servicios para suelos y aguas",
+  "Servicios veterinarios",
+  "Sondaje y prospección",
+  "Tratamiento de aguas y efluentes"
+ ]
+}

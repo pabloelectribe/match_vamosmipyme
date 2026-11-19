@@ -1,0 +1,680 @@
+[
+ {
+  "id": "fic01",
+  "nombre": "Andes Sondajes",
+  "region": "De Antofagasta",
+  "comuna": "Calama",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Sondaje y prospección",
+   "Servicios para suelos y aguas"
+  ],
+  "busca": [
+   "Arriendo de oficinas, bodegas y cowork",
+   "Arriendo de maquinaria para la construcción y andamios",
+   "Capacitación y OTEC"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic02",
+  "nombre": "Pampa Mantención Industrial",
+  "region": "De Antofagasta",
+  "comuna": "Antofagasta",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Mantención industrial mecánica y eléctrica",
+   "Instalación eléctrica industrial"
+  ],
+  "busca": [
+   "Prevención de riesgos, Seguridad y salud en obra",
+   "Marketing digital, ads, publicidad y automatización",
+   "Arriendo de oficinas, bodegas y cowork"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic03",
+  "nombre": "Norte Solar Atacama",
+  "region": "De Atacama",
+  "comuna": "Copiapó",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Instalación de sistemas fotovoltaicos",
+   "Instalación eléctrica industrial"
+  ],
+  "busca": [
+   "Arriendo de oficinas, bodegas y cowork",
+   "Diseño gráfico y branding",
+   "Servicios de diseño y desarrollo web"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic04",
+  "nombre": "Costa Norte Logística",
+  "region": "De Tarapacá",
+  "comuna": "Iquique",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Carga general y especializada",
+   "Almacenaje y bodegaje"
+  ],
+  "busca": [
+   "Desarrollo de software",
+   "Marketing digital, ads, publicidad y automatización",
+   "Ciberseguridad"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic05",
+  "nombre": "Altiplano Catering",
+  "region": "De Arica y Parinacota",
+  "comuna": "Arica",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Catering y banquetería",
+   "Servicios de alimentación para Horeca y casinos"
+  ],
+  "busca": [
+   "Diseño gráfico y branding",
+   "Servicios de diseño y desarrollo web",
+   "Fabricación de envases y packaging"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic06",
+  "nombre": "Valle del Elqui Packaging",
+  "region": "De Coquimbo",
+  "comuna": "La Serena",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Fabricación de envases y packaging",
+   "Corte, plegado y soldadura"
+  ],
+  "busca": [
+   "Diseño gráfico y branding",
+   "Marketing digital, ads, publicidad y automatización",
+   "Arriendo de oficinas, bodegas y cowork"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic07",
+  "nombre": "Frutas del Limarí",
+  "region": "De Coquimbo",
+  "comuna": "Ovalle",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Distribución y venta de alimentos al por mayor",
+   "Frío y cadena de suministro"
+  ],
+  "busca": [
+   "Fabricación de envases y packaging",
+   "3PL, fulfillment y última milla",
+   "Servicios de diseño y desarrollo web"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic08",
+  "nombre": "Puerto Frío Servicios",
+  "region": "De Valparaíso",
+  "comuna": "San Antonio",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Frío y cadena de suministro",
+   "3PL, fulfillment y última milla"
+  ],
+  "busca": [
+   "Desarrollo de software",
+   "Contabilidad y auditoría",
+   "Arriendo de oficinas, bodegas y cowork"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic09",
+  "nombre": "Aconcagua Contadores",
+  "region": "De Valparaíso",
+  "comuna": "Los Andes",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Contabilidad y auditoría",
+   "Servicios jurídicos empresariales"
+  ],
+  "busca": [
+   "Desarrollo de software",
+   "Servicios de diseño y desarrollo web",
+   "Gestión de Redes Sociales"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic10",
+  "nombre": "Marea Buceo y Mantención",
+  "region": "De Valparaíso",
+  "comuna": "Valparaíso",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Buceo operativo y mantención submarina",
+   "Mantención industrial mecánica y eléctrica"
+  ],
+  "busca": [
+   "Servicios de diseño y desarrollo web",
+   "Diseño gráfico y branding",
+   "Prevención de riesgos, Seguridad y salud en obra"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic11",
+  "nombre": "Pixel Sur Diseño",
+  "region": "Del Biobío",
+  "comuna": "Concepción",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Diseño gráfico y branding",
+   "Publicidad y agencias creativas",
+   "Gestión de Redes Sociales"
+  ],
+  "busca": [
+   "Servicios jurídicos empresariales",
+   "Contabilidad y auditoría",
+   "Arriendo de oficinas, bodegas y cowork"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic12",
+  "nombre": "Biobío Capacitación OTEC",
+  "region": "Del Biobío",
+  "comuna": "Talcahuano",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Capacitación y OTEC",
+   "Capacitación técnica para industrias",
+   "Formación corporativa y ejecutiva"
+  ],
+  "busca": [
+   "Diseño gráfico y branding",
+   "Servicios de diseño y desarrollo web",
+   "Arriendo de oficinas, bodegas y cowork"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic13",
+  "nombre": "Forestal Ñuble Servicios",
+  "region": "De Ñuble",
+  "comuna": "Chillán",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Manejo forestal",
+   "Asesoría agrícola"
+  ],
+  "busca": [
+   "Marketing digital, ads, publicidad y automatización",
+   "Desarrollo de software",
+   "Arriendo/venta de maquinaria y equipos"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic14",
+  "nombre": "Maule Agro Asesorías",
+  "region": "Del Maule",
+  "comuna": "Talca",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Asesoría agrícola",
+   "Servicios veterinarios"
+  ],
+  "busca": [
+   "Servicios de diseño y desarrollo web",
+   "Gestión de Redes Sociales",
+   "Ciberseguridad"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic15",
+  "nombre": "Viñas y Barricas Eventos",
+  "region": "Del Libertador General Bernardo O'Higgins",
+  "comuna": "Rancagua",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Producción de eventos y ferias B2B",
+   "Catering y banquetería"
+  ],
+  "busca": [
+   "Diseño gráfico y branding",
+   "Servicios de audio, video y televisión",
+   "Gestión de Redes Sociales"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic16",
+  "nombre": "Cordillera Aire Acondicionado",
+  "region": "Del Libertador General Bernardo O'Higgins",
+  "comuna": "San Fernando",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Instalación y mantención de Aire Acondicionado",
+   "Mantención industrial mecánica y eléctrica"
+  ],
+  "busca": [
+   "Servicios de diseño y desarrollo web",
+   "Marketing digital, ads, publicidad y automatización",
+   "Arriendo de oficinas, bodegas y cowork"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic17",
+  "nombre": "Temuco Contratistas del Sur",
+  "region": "De La Araucanía",
+  "comuna": "Temuco",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Contratistas y subcontratistas, obras civiles",
+   "Empresa Constructora",
+   "Arriendo de maquinaria para la construcción y andamios"
+  ],
+  "busca": [
+   "Prevención de riesgos, Seguridad y salud en obra",
+   "Inspección Técnica de Obras (ITO)",
+   "Gestión de Redes Sociales"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic18",
+  "nombre": "Lafquén Acuícola",
+  "region": "De Los Ríos",
+  "comuna": "Valdivia",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Servicios de cultivo y mantención acuícola",
+   "Monitoreo ambiental y permisos"
+  ],
+  "busca": [
+   "Desarrollo de software",
+   "Servicios de diseño y desarrollo web",
+   "Fabricación de envases y packaging"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic19",
+  "nombre": "Río Bueno Muebles y Corte",
+  "region": "De Los Ríos",
+  "comuna": "La Unión",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Corte, plegado y soldadura",
+   "Diseño y prototipado industrial"
+  ],
+  "busca": [
+   "Diseño gráfico y branding",
+   "Marketing digital, ads, publicidad y automatización",
+   "Fabricación de envases y packaging"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic20",
+  "nombre": "Chiloé Cultivos Marinos",
+  "region": "De Los Lagos",
+  "comuna": "Castro",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Servicios de cultivo y mantención acuícola",
+   "Frío y cadena de suministro"
+  ],
+  "busca": [
+   "Servicios de diseño y desarrollo web",
+   "Ciberseguridad",
+   "3PL, fulfillment y última milla"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic21",
+  "nombre": "Patagonia Prevención",
+  "region": "De Los Lagos",
+  "comuna": "Puerto Montt",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Prevención de riesgos",
+   "Prevención de riesgos (DS44)",
+   "Exámenes preocupacionales y vigilancia"
+  ],
+  "busca": [
+   "Desarrollo de software",
+   "Servicios de diseño y desarrollo web",
+   "Arriendo de oficinas, bodegas y cowork"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic22",
+  "nombre": "Puerto Varas Cowork y Eventos",
+  "region": "De Los Lagos",
+  "comuna": "Puerto Varas",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Producción de eventos y ferias B2B",
+   "Servicios de audio, video y televisión"
+  ],
+  "busca": [
+   "Marketing digital, ads, publicidad y automatización",
+   "Gestión de Redes Sociales",
+   "Diseño gráfico y branding"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic23",
+  "nombre": "Aysén Ambiental",
+  "region": "De Aysén",
+  "comuna": "Coyhaique",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Monitoreo ambiental y permisos",
+   "Servicios para suelos y aguas",
+   "Tratamiento de aguas y efluentes"
+  ],
+  "busca": [
+   "Servicios de diseño y desarrollo web",
+   "Ciberseguridad",
+   "Outsourcing"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic24",
+  "nombre": "Magallanes Servicios Veterinarios",
+  "region": "De Magallanes",
+  "comuna": "Punta Arenas",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Servicios veterinarios"
+  ],
+  "busca": [
+   "Servicios de diseño y desarrollo web",
+   "Gestión de Redes Sociales",
+   "Asesoría en Mercado Público (ChileCompra)"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic25",
+  "nombre": "Austral Confecciones",
+  "region": "De Magallanes",
+  "comuna": "Punta Arenas",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Confección industrial de textil o calzado",
+   "Regalos corporativos, POP y merchandising"
+  ],
+  "busca": [
+   "Diseño gráfico y branding",
+   "Marketing digital, ads, publicidad y automatización",
+   "Fabricación de envases y packaging"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic26",
+  "nombre": "Studio Maipo Branding",
+  "region": "Metropolitana de Santiago",
+  "comuna": "Santiago",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Diseño gráfico y branding",
+   "Servicios de diseño y desarrollo web",
+   "Publicidad y agencias creativas"
+  ],
+  "busca": [
+   "Arriendo de oficinas, bodegas y cowork",
+   "Servicios jurídicos empresariales",
+   "Contabilidad y auditoría"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic27",
+  "nombre": "Bodegas Lampa",
+  "region": "Metropolitana de Santiago",
+  "comuna": "Lampa",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Almacenaje y bodegaje",
+   "3PL, fulfillment y última milla",
+   "Facilities y gestión de propiedades"
+  ],
+  "busca": [
+   "Marketing digital, ads, publicidad y automatización",
+   "Desarrollo de software",
+   "Gestión de Redes Sociales"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic28",
+  "nombre": "Reclutamos Pyme",
+  "region": "Metropolitana de Santiago",
+  "comuna": "Providencia",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Reclutamiento y selección especializada",
+   "Outsourcing",
+   "Contabilidad y auditoría"
+  ],
+  "busca": [
+   "Desarrollo de software",
+   "Ciberseguridad",
+   "Diseño gráfico y branding"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic29",
+  "nombre": "Cloud Pyme Chile",
+  "region": "Metropolitana de Santiago",
+  "comuna": "Ñuñoa",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Servicios cloud",
+   "Desarrollo de software",
+   "Ciberseguridad"
+  ],
+  "busca": [
+   "Diseño gráfico y branding",
+   "Arriendo de oficinas, bodegas y cowork",
+   "Marketing digital, ads, publicidad y automatización"
+  ],
+  "canales": [
+   "digital"
+  ],
+  "ficha": "",
+  "ficticia": true
+ },
+ {
+  "id": "fic30",
+  "nombre": "ProDocs Gestión Documental",
+  "region": "Metropolitana de Santiago",
+  "comuna": "San Miguel",
+  "rubros": [],
+  "tags": [],
+  "vende": [
+   "Gestión documental",
+   "Outsourcing"
+  ],
+  "busca": [
+   "Servicios de diseño y desarrollo web",
+   "Marketing digital, ads, publicidad y automatización",
+   "Ciberseguridad"
+  ],
+  "canales": [
+   "digital",
+   "presencial"
+  ],
+  "ficha": "",
+  "ficticia": true
+ }
+]
