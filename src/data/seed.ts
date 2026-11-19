@@ -90,7 +90,7 @@ export function cargarSemilla(): Estado {
       if (de.id === e.id) continue
       evaluaciones.push({
         matchId: `seed-${e.id}-${k}`, de: de.id, a: e.id,
-        nota: 5 + ((h >> k) % 3), // 5, 6 o 7
+        nota: 5 + ((h >>> k) % 3), // 5, 6 o 7
         atributos: [atributos[(h + k) % 5], atributos[(h + k + 2) % 5]],
         en: SEMILLA_FECHA,
       })
@@ -99,3 +99,7 @@ export function cargarSemilla(): Estado {
 
   return { empresas, ofertas, busquedas, necesidades, evaluaciones }
 }
+
+/** "Metropolitana de Santiago" → "Metropolitana"; "De La Araucanía" → "Araucanía". */
+export const regionCorta = (r: string) =>
+  r.replace(/ de Santiago$/, '').replace(/^(De La|De Los|Del Libertador General Bernardo|De|Del|La)\s/, '')

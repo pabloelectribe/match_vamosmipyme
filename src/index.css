@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body, #root { height: 100%; }
+  body { @apply font-sans text-gris bg-gris-claro antialiased; font-weight: 400; }
+  h1, h2, h3 { @apply text-tinta font-bold; }
+  button, a, input, select, textarea { @apply outline-none; }
+  :focus-visible { outline: 3px solid #004dff; outline-offset: 2px; border-radius: 12px; }
+}
+
+@layer components {
+  .btn { @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-2xl px-5 text-[16px] font-medium transition active:scale-[.98] disabled:opacity-50 disabled:pointer-events-none; }
+  .btn-primario { @apply bg-naranjo text-tinta font-bold hover:bg-naranjo-oscuro; }
+  .btn-secundario { @apply bg-white text-azul border-2 border-azul hover:bg-azul-suave; }
+  .btn-suave { @apply bg-gris-claro text-gris hover:bg-gris-borde; }
+  .tarjeta { @apply rounded-3xl bg-white shadow-tarjeta; }
+  .campo { @apply min-h-[48px] w-full rounded-2xl border-2 border-gris-borde bg-white px-4 text-[16px] text-tinta placeholder:text-gris-medio focus:border-azul; }
+  .etiqueta { @apply text-[13px] font-medium uppercase tracking-wide text-gris-medio; }
+}
