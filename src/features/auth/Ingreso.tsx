@@ -49,7 +49,7 @@ export function Ingreso() {
             {error || 'Solo para clientes BancoEstado. Es una validación de ejemplo: sirve cualquier RUT con dígito verificador correcto.'}
           </p>
           <button className="btn btn-primario mt-5 w-full" disabled={fase !== 'form' || limpiarRut(rut).length < 8}>
-            {fase === 'validando' ? 'Validando con BancoEstado…' : fase === 'ok' ? 'Cliente validado' : 'Validar y entrar'}
+            {fase === 'validando' ? 'Validando con BancoEstado…' : fase === 'ok' ? 'Cliente MiPYME BancoEstado' : 'Validar y entrar'}
             {fase === 'ok' && <Icono n="check" className="h-5 w-5" />}
           </button>
         </form>

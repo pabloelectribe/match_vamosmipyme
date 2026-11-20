@@ -81,7 +81,7 @@ export function Chip({ children, encendido, onQuitar, onClick, activo }: {
 export function SelloValidado() {
   return (
     <span className="inline-flex items-center gap-1 rounded-full bg-azul-suave px-2.5 py-1 text-[13px] font-medium text-azul">
-      <Icono n="escudo" className="h-3.5 w-3.5" /> Cliente validado
+      <Icono n="escudo" className="h-3.5 w-3.5" /> Cliente MiPYME BancoEstado
     </span>
   )
 }
